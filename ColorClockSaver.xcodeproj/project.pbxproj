@@ -8,16 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF177D1EF1BA0600BB834B /* MainView.swift */; };
+		39BF179A1EF1C2D400BB834B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF17991EF1C2D400BB834B /* AppDelegate.swift */; };
+		39BF179E1EF1C2D400BB834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BF179D1EF1C2D400BB834B /* Assets.xcassets */; };
+		39BF17A61EF1C2DA00BB834B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF177D1EF1BA0600BB834B /* MainView.swift */; };
+		39BF17A81EF1C41400BB834B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BF17A71EF1C41400BB834B /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39BF17701EF1B98E00BB834B /* ColorClockSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorClockSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BF17771EF1B98E00BB834B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39BF177D1EF1BA0600BB834B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ../MainView.swift; sourceTree = "<group>"; };
+		39BF17971EF1C2D400BB834B /* Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39BF17991EF1C2D400BB834B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39BF179D1EF1C2D400BB834B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39BF17A21EF1C2D400BB834B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39BF17A71EF1C41400BB834B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		39BF176C1EF1B98E00BB834B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39BF17941EF1C2D400BB834B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				39BF17721EF1B98E00BB834B /* ColorClockSaver */,
+				39BF17981EF1C2D400BB834B /* Preview */,
 				39BF17711EF1B98E00BB834B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				39BF17701EF1B98E00BB834B /* ColorClockSaver.saver */,
+				39BF17971EF1C2D400BB834B /* Preview.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,6 +68,17 @@
 				39BF17771EF1B98E00BB834B /* Info.plist */,
 			);
 			path = ColorClockSaver;
+			sourceTree = "<group>";
+		};
+		39BF17981EF1C2D400BB834B /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				39BF17991EF1C2D400BB834B /* AppDelegate.swift */,
+				39BF179D1EF1C2D400BB834B /* Assets.xcassets */,
+				39BF17A71EF1C41400BB834B /* MainMenu.xib */,
+				39BF17A21EF1C2D400BB834B /* Info.plist */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,12 +112,30 @@
 			productReference = 39BF17701EF1B98E00BB834B /* ColorClockSaver.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
+		39BF17961EF1C2D400BB834B /* Preview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39BF17A51EF1C2D400BB834B /* Build configuration list for PBXNativeTarget "Preview" */;
+			buildPhases = (
+				39BF17931EF1C2D400BB834B /* Sources */,
+				39BF17941EF1C2D400BB834B /* Frameworks */,
+				39BF17951EF1C2D400BB834B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Preview;
+			productName = Preview;
+			productReference = 39BF17971EF1C2D400BB834B /* Preview.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		39BF17671EF1B98E00BB834B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Edward Loveall";
 				TargetAttributes = {
@@ -96,6 +143,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 365N6VLRMF;
 						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					39BF17961EF1C2D400BB834B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 365N6VLRMF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -106,6 +158,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 39BF17661EF1B98E00BB834B;
 			productRefGroup = 39BF17711EF1B98E00BB834B /* Products */;
@@ -113,6 +166,7 @@
 			projectRoot = "";
 			targets = (
 				39BF176F1EF1B98E00BB834B /* ColorClockSaver */,
+				39BF17961EF1C2D400BB834B /* Preview */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +179,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39BF17951EF1C2D400BB834B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BF179E1EF1C2D400BB834B /* Assets.xcassets in Resources */,
+				39BF17A81EF1C41400BB834B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -133,6 +196,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39BF17931EF1C2D400BB834B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39BF17A61EF1C2DA00BB834B /* MainView.swift in Sources */,
+				39BF179A1EF1C2D400BB834B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +335,37 @@
 			};
 			name = Release;
 		};
+		39BF17A31EF1C2D400BB834B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 365N6VLRMF;
+				INFOPLIST_FILE = Preview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edwardloveall.Preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		39BF17A41EF1C2D400BB834B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 365N6VLRMF;
+				INFOPLIST_FILE = Preview/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.edwardloveall.Preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +383,15 @@
 			buildConfigurations = (
 				39BF177B1EF1B98E00BB834B /* Debug */,
 				39BF177C1EF1B98E00BB834B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39BF17A51EF1C2D400BB834B /* Build configuration list for PBXNativeTarget "Preview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39BF17A31EF1C2D400BB834B /* Debug */,
+				39BF17A41EF1C2D400BB834B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
