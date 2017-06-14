@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ColorClock.xcscheme</key>
+		<key>ColorClockSaver.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3972434B1773B74900C45B21</key>
+		<key>39BF176F1EF1B98E00BB834B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
