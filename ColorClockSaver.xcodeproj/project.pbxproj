@@ -11,7 +11,7 @@
 		39BF179A1EF1C2D400BB834B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF17991EF1C2D400BB834B /* AppDelegate.swift */; };
 		39BF179E1EF1C2D400BB834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BF179D1EF1C2D400BB834B /* Assets.xcassets */; };
 		39BF17A61EF1C2DA00BB834B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF177D1EF1BA0600BB834B /* MainView.swift */; };
-		39BF17A81EF1C41400BB834B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BF17A71EF1C41400BB834B /* MainMenu.xib */; };
+		39BF17AB1EF1C8DC00BB834B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BF17A91EF1C8DC00BB834B /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		39BF17991EF1C2D400BB834B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39BF179D1EF1C2D400BB834B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39BF17A21EF1C2D400BB834B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39BF17A71EF1C41400BB834B /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		39BF17AA1EF1C8DC00BB834B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Preview/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			children = (
 				39BF17991EF1C2D400BB834B /* AppDelegate.swift */,
 				39BF179D1EF1C2D400BB834B /* Assets.xcassets */,
-				39BF17A71EF1C41400BB834B /* MainMenu.xib */,
+				39BF17A91EF1C8DC00BB834B /* MainMenu.xib */,
 				39BF17A21EF1C2D400BB834B /* Info.plist */,
 			);
 			path = Preview;
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39BF179E1EF1C2D400BB834B /* Assets.xcassets in Resources */,
-				39BF17A81EF1C41400BB834B /* MainMenu.xib in Resources */,
+				39BF17AB1EF1C8DC00BB834B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +209,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39BF17A91EF1C8DC00BB834B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39BF17AA1EF1C8DC00BB834B /* Base */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		39BF17781EF1B98E00BB834B /* Debug */ = {
