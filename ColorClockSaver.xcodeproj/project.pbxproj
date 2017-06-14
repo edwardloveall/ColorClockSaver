@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39BF17741EF1B98E00BB834B /* ColorClockSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 39BF17731EF1B98E00BB834B /* ColorClockSaverView.h */; };
-		39BF17761EF1B98E00BB834B /* ColorClockSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BF17751EF1B98E00BB834B /* ColorClockSaverView.m */; };
+		39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF177D1EF1BA0600BB834B /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		39BF17701EF1B98E00BB834B /* ColorClockSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorClockSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		39BF17731EF1B98E00BB834B /* ColorClockSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorClockSaverView.h; sourceTree = "<group>"; };
-		39BF17751EF1B98E00BB834B /* ColorClockSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorClockSaverView.m; sourceTree = "<group>"; };
 		39BF17771EF1B98E00BB834B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39BF177D1EF1BA0600BB834B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ../MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +46,7 @@
 		39BF17721EF1B98E00BB834B /* ColorClockSaver */ = {
 			isa = PBXGroup;
 			children = (
-				39BF17731EF1B98E00BB834B /* ColorClockSaverView.h */,
-				39BF17751EF1B98E00BB834B /* ColorClockSaverView.m */,
+				39BF177D1EF1BA0600BB834B /* MainView.swift */,
 				39BF17771EF1B98E00BB834B /* Info.plist */,
 			);
 			path = ColorClockSaver;
@@ -62,7 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39BF17741EF1B98E00BB834B /* ColorClockSaverView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +95,7 @@
 					39BF176F1EF1B98E00BB834B = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 365N6VLRMF;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39BF17761EF1B98E00BB834B /* ColorClockSaverView.m in Sources */,
+				39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

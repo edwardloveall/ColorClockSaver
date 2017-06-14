@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 Edward Loveall. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>ColorClockSaverView</string>
+	<string>ColorClockSaver.MainView</string>
 </dict>
 </plist>
