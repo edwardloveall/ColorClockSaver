@@ -1,20 +1,36 @@
 import ScreenSaver
 
 class MainView: ScreenSaverView {
+  let wrapperView: NSStackView
+  let timeView: TimeView
+
+  override init?(frame: NSRect, isPreview: Bool) {
+    wrapperView = NSStackView()
+    timeView = TimeView()
+    super.init(frame: frame, isPreview: isPreview)
+    setup()
+  }
+  
+  required init?(coder: NSCoder) {
+    wrapperView = NSStackView()
+    timeView = TimeView()
+    super.init(coder: coder)
+    setup()
+  }
+
+  func setup() {
+    wrapperView.alignment = .centerX
+    wrapperView.orientation = .vertical
+    wrapperView.distribution = .equalCentering
+    wrapperView.frame = frame
+    wrapperView.addArrangedSubview(timeView)
+
+    addSubview(wrapperView)
+    translatesAutoresizingMaskIntoConstraints = false
+  }
+
   override func draw(_ rect: NSRect) {
-    let date = Date()
-    let formatter = DateFormatter()
-    formatter.dateFormat = "HH:mm:ss"
-    let dateString = formatter.string(from: date)
-    let storage = NSTextStorage(string: dateString)
-    let layoutManager = NSLayoutManager()
-    let textContainer = NSTextContainer()
-    layoutManager.addTextContainer(textContainer)
-    storage.addLayoutManager(layoutManager)
-    let glyphRange = layoutManager.glyphRange(for: textContainer)
-    self.lockFocus()
-    layoutManager.drawGlyphs(forGlyphRange: glyphRange, at: bounds.origin)
-    self.unlockFocus()
+    timeView.setNeedsDisplay(rect)
   }
 
   override func animateOneFrame() {

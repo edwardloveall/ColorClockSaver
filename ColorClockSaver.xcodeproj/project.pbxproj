@@ -12,6 +12,8 @@
 		39BF179E1EF1C2D400BB834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BF179D1EF1C2D400BB834B /* Assets.xcassets */; };
 		39BF17A61EF1C2DA00BB834B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF177D1EF1BA0600BB834B /* MainView.swift */; };
 		39BF17AB1EF1C8DC00BB834B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39BF17A91EF1C8DC00BB834B /* MainMenu.xib */; };
+		39BF17AF1EF1D8B500BB834B /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF17AE1EF1D8B500BB834B /* TimeView.swift */; };
+		39BF17B01EF1D8B800BB834B /* TimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF17AE1EF1D8B500BB834B /* TimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,7 @@
 		39BF179D1EF1C2D400BB834B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39BF17A21EF1C2D400BB834B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39BF17AA1EF1C8DC00BB834B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Preview/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		39BF17AE1EF1D8B500BB834B /* TimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				39BF177D1EF1BA0600BB834B /* MainView.swift */,
+				39BF17AE1EF1D8B500BB834B /* TimeView.swift */,
 				39BF17771EF1B98E00BB834B /* Info.plist */,
 			);
 			path = ColorClockSaver;
@@ -196,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */,
+				39BF17AF1EF1D8B500BB834B /* TimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +210,7 @@
 			files = (
 				39BF17A61EF1C2DA00BB834B /* MainView.swift in Sources */,
 				39BF179A1EF1C2D400BB834B /* AppDelegate.swift in Sources */,
+				39BF17B01EF1D8B800BB834B /* TimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
