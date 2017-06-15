@@ -19,10 +19,11 @@ class MainView: ScreenSaverView {
   }
 
   func setup() {
+    guard let screen = NSScreen.main() else { return }
     wrapperView.alignment = .centerX
     wrapperView.orientation = .vertical
     wrapperView.distribution = .equalCentering
-    wrapperView.frame = frame
+    wrapperView.frame = screen.frame
     wrapperView.addArrangedSubview(timeView)
 
     addSubview(wrapperView)
