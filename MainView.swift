@@ -3,10 +3,12 @@ import ScreenSaver
 class MainView: ScreenSaverView {
   let wrapperView = NSStackView()
   let timeView = TimeView()
+  let colorCodeView = ColorCodeView()
 
   override func viewDidMoveToWindow() {
     layoutViews()
     timeView.resizeFont(for: bounds.size)
+    colorCodeView.resizeFont(for: bounds.size)
   }
 
   func layoutViews() {
@@ -15,6 +17,7 @@ class MainView: ScreenSaverView {
     wrapperView.orientation = .vertical
     wrapperView.distribution = .equalCentering
     wrapperView.addArrangedSubview(timeView)
+    wrapperView.addArrangedSubview(colorCodeView)
     addSubview(wrapperView)
 
     wrapperView.translatesAutoresizingMaskIntoConstraints = false
@@ -27,6 +30,7 @@ class MainView: ScreenSaverView {
 
   override func draw(_ rect: NSRect) {
     timeView.update()
+    colorCodeView.update()
   }
 
   override func animateOneFrame() {

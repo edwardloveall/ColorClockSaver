@@ -21,6 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     timer.fire()
 
     screenSaverView.timeView.resizeFont(for: screenSaverView.bounds.size)
+    screenSaverView.colorCodeView.resizeFont(for: screenSaverView.bounds.size)
   }
 
   func applicationWillTerminate(_ aNotification: Notification) {}
@@ -31,5 +32,6 @@ extension AppDelegate: NSWindowDelegate {
     guard let screenSaverView = window.contentView as? MainView
       else { fatalError("could not cast window's contentView as a MainView") }
     screenSaverView.timeView.resizeFont(for: screenSaverView.bounds.size)
+    screenSaverView.colorCodeView.resizeFont(for: screenSaverView.bounds.size)
   }
 }
