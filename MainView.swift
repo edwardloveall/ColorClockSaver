@@ -38,7 +38,7 @@ class MainView: ScreenSaverView {
   }
 
   override func draw(_ rect: NSRect) {
-    timeView.setNeedsDisplay(rect)
+    timeView.update()
   }
 
   override func animateOneFrame() {
