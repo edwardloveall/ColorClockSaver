@@ -18,16 +18,23 @@ class MainView: ScreenSaverView {
     setup()
   }
 
-  func setup() {
-    guard let screen = NSScreen.main() else { return }
+  override func viewDidMoveToWindow() {
+    wrapperView.frame = frame
     wrapperView.alignment = .centerX
     wrapperView.orientation = .vertical
     wrapperView.distribution = .equalCentering
-    wrapperView.frame = screen.frame
     wrapperView.addArrangedSubview(timeView)
-
     addSubview(wrapperView)
-    translatesAutoresizingMaskIntoConstraints = false
+
+    wrapperView.translatesAutoresizingMaskIntoConstraints = false
+
+    wrapperView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+    wrapperView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+    wrapperView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
+    wrapperView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
+  }
+
+  func setup() {
   }
 
   override func draw(_ rect: NSRect) {
