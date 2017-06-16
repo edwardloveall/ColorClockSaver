@@ -6,6 +6,7 @@ class MainView: ScreenSaverView {
 
   override func viewDidMoveToWindow() {
     layoutViews()
+    timeView.resizeFont(for: bounds.size)
   }
 
   func layoutViews() {
@@ -30,5 +31,12 @@ class MainView: ScreenSaverView {
 
   override func animateOneFrame() {
     setNeedsDisplay(bounds)
+  }
+}
+
+extension MainView: NSWindowDelegate {
+  func windowWillResize(_ sender: NSWindow, to frameSize: NSSize) -> NSSize {
+    timeView.resizeFont(for: bounds.size)
+    return frameSize
   }
 }

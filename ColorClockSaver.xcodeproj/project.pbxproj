@@ -412,6 +412,7 @@
 				39BF17A41EF1C2D400BB834B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

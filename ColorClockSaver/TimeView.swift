@@ -27,4 +27,9 @@ class TimeView: NSTextField {
 
     stringValue = dateString
   }
+
+  func resizeFont(for size: NSSize) {
+    let newFontSize = size.width * 0.1
+    font = NSFont(name: "mononoki", size: newFontSize)
+  }
 }
