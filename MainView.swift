@@ -33,10 +33,3 @@ class MainView: ScreenSaverView {
     setNeedsDisplay(bounds)
   }
 }
-
-extension MainView: NSWindowDelegate {
-  func windowWillResize(_ sender: NSWindow, to frameSize: NSSize) -> NSSize {
-    timeView.resizeFont(for: bounds.size)
-    return frameSize
-  }
-}
