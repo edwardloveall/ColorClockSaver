@@ -35,13 +35,13 @@ class ColorCodeView: NSTextField {
     let minute = calendar.component(.minute, from: date)
     let second = calendar.component(.second, from: date)
 
-    let hexHour = (255/23) * hour
-    let hexMinute = (255/59) * minute
-    let hexSecond = (255/59) * second
+    let hexHour = (255.0/23) * Double(hour)
+    let hexMinute = (255.0/59) * Double(minute)
+    let hexSecond = (255.0/59) * Double(second)
 
-    let hexHourString = String(format: "%x", hexHour).uppercased()
-    let hexMinuteString = String(format: "%x", hexMinute).uppercased()
-    let hexSecondString = String(format: "%x", hexSecond).uppercased()
+    let hexHourString = String(format: "%02x", Int(hexHour)).uppercased()
+    let hexMinuteString = String(format: "%02x", Int(hexMinute)).uppercased()
+    let hexSecondString = String(format: "%02x", Int(hexSecond)).uppercased()
 
     return "\(hexHourString)\(hexMinuteString)\(hexSecondString)"
   }
