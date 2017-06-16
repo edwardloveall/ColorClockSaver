@@ -1,24 +1,14 @@
 import ScreenSaver
 
 class MainView: ScreenSaverView {
-  let wrapperView: NSStackView
-  let timeView: TimeView
-
-  override init?(frame: NSRect, isPreview: Bool) {
-    wrapperView = NSStackView()
-    timeView = TimeView()
-    super.init(frame: frame, isPreview: isPreview)
-    setup()
-  }
-  
-  required init?(coder: NSCoder) {
-    wrapperView = NSStackView()
-    timeView = TimeView()
-    super.init(coder: coder)
-    setup()
-  }
+  let wrapperView = NSStackView()
+  let timeView = TimeView()
 
   override func viewDidMoveToWindow() {
+    layoutViews()
+  }
+
+  func layoutViews() {
     wrapperView.frame = frame
     wrapperView.alignment = .centerX
     wrapperView.orientation = .vertical
@@ -32,9 +22,6 @@ class MainView: ScreenSaverView {
     wrapperView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
     wrapperView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
     wrapperView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
-  }
-
-  func setup() {
   }
 
   override func draw(_ rect: NSRect) {
