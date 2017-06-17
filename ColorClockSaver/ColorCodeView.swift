@@ -1,6 +1,8 @@
 import Cocoa
 
 class ColorCodeView: NSTextField {
+  let colorGen = ColorGenerator()
+
   override init(frame frameRect: NSRect) {
     super.init(frame: frameRect)
     setup()
@@ -29,19 +31,10 @@ class ColorCodeView: NSTextField {
   }
 
   func convertTimeToHex() -> String {
-    let calendar = Calendar(identifier: .gregorian)
-    let date = Date()
-    let hour = calendar.component(.hour, from: date)
-    let minute = calendar.component(.minute, from: date)
-    let second = calendar.component(.second, from: date)
-
-    let hexHour = (255.0/23) * Double(hour)
-    let hexMinute = (255.0/59) * Double(minute)
-    let hexSecond = (255.0/59) * Double(second)
-
-    let hexHourString = String(format: "%02x", Int(hexHour)).uppercased()
-    let hexMinuteString = String(format: "%02x", Int(hexMinute)).uppercased()
-    let hexSecondString = String(format: "%02x", Int(hexSecond)).uppercased()
+    let rgbValues = colorGen.rgbComponentsFromTime()
+    let hexHourString = String(format: "%02x", rgbValues.red).uppercased()
+    let hexMinuteString = String(format: "%02x", rgbValues.green).uppercased()
+    let hexSecondString = String(format: "%02x", rgbValues.blue).uppercased()
 
     return "\(hexHourString)\(hexMinuteString)\(hexSecondString)"
   }
