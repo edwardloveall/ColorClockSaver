@@ -7,10 +7,10 @@ class MainView: ScreenSaverView {
   let colorGenerator = ColorGenerator()
 
   override func viewDidMoveToWindow() {
+    Fonts.load(fontName: Fonts.timeFont, extension: "ttf")
     layoutViews()
     timeView.resizeFont(for: bounds.size)
     colorCodeView.resizeFont(for: bounds.size)
-    Fonts.load(fontName: Fonts.timeFont, extension: "ttf")
   }
 
   func layoutViews() {

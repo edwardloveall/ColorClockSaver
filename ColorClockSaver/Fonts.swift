@@ -6,11 +6,14 @@ class Fonts {
 
   static func load(fontName name: String, extension suffix: String) {
     guard
-      let url = Bundle.main.url(forResource: name, withExtension: suffix)
+      let bundle = Bundle(identifier: "com.edwardloveall.ColorClockSaver"),
+      let url = bundle.url(forResource: name, withExtension: suffix)
     else {
       fatalError("Could not load font: \(name).\(suffix)")
     }
 
-    CTFontManagerRegisterFontsForURL(url as CFURL, .process, nil)
+    var error: Unmanaged<CFError>? = nil
+    CTFontManagerRegisterFontsForURL(url as CFURL, .process, &error)
+    NSLog(String(describing: error))
   }
 }
