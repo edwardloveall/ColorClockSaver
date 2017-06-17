@@ -16,7 +16,7 @@ class TimeView: NSTextField {
     isBezeled = false
     isBordered = false
     isEditable = false
-    font = NSFont(name: "mononoki", size: 0)
+    font = NSFont(name: Fonts.timeFont, size: 0)
   }
 
   func update() {
@@ -30,6 +30,6 @@ class TimeView: NSTextField {
 
   func resizeFont(for size: NSSize) {
     let newFontSize = size.width * 0.1
-    font = NSFont(name: "mononoki", size: newFontSize)
+    font = NSFont(name: Fonts.timeFont, size: newFontSize)
   }
 }

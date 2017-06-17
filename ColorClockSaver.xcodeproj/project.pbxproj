@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39B2D0291EF591460068BB3F /* mononoki-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */; };
+		39B2D02A1EF591460068BB3F /* mononoki-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */; };
+		39B2D02F1EF59B190068BB3F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B2D02E1EF59B190068BB3F /* Fonts.swift */; };
+		39B2D0301EF59B190068BB3F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B2D02E1EF59B190068BB3F /* Fonts.swift */; };
 		39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF177D1EF1BA0600BB834B /* MainView.swift */; };
 		39BF179A1EF1C2D400BB834B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BF17991EF1C2D400BB834B /* AppDelegate.swift */; };
 		39BF179E1EF1C2D400BB834B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BF179D1EF1C2D400BB834B /* Assets.xcassets */; };
@@ -21,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mononoki-Regular.ttf"; path = "Assets/mononoki-Regular.ttf"; sourceTree = "<group>"; };
+		39B2D02E1EF59B190068BB3F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		39BF17701EF1B98E00BB834B /* ColorClockSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorClockSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BF17771EF1B98E00BB834B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39BF177D1EF1BA0600BB834B /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -52,9 +58,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39B2D0271EF5912C0068BB3F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		39BF17661EF1B98E00BB834B = {
 			isa = PBXGroup;
 			children = (
+				39B2D0271EF5912C0068BB3F /* Assets */,
 				39BF17721EF1B98E00BB834B /* ColorClockSaver */,
 				39BF17981EF1C2D400BB834B /* Preview */,
 				39BF17711EF1B98E00BB834B /* Products */,
@@ -77,6 +92,7 @@
 				39BF17AE1EF1D8B500BB834B /* TimeView.swift */,
 				39D984761EF40F3E006E0617 /* ColorCodeView.swift */,
 				39D892401EF4BEBD0063F53D /* ColorGenerator.swift */,
+				39B2D02E1EF59B190068BB3F /* Fonts.swift */,
 				39BF17771EF1B98E00BB834B /* Info.plist */,
 			);
 			path = ColorClockSaver;
@@ -188,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B2D0291EF591460068BB3F /* mononoki-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B2D02A1EF591460068BB3F /* mononoki-Regular.ttf in Resources */,
 				39BF179E1EF1C2D400BB834B /* Assets.xcassets in Resources */,
 				39BF17AB1EF1C8DC00BB834B /* MainMenu.xib in Resources */,
 			);
@@ -208,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39D984771EF40F3E006E0617 /* ColorCodeView.swift in Sources */,
+				39B2D02F1EF59B190068BB3F /* Fonts.swift in Sources */,
 				39D892411EF4BEBD0063F53D /* ColorGenerator.swift in Sources */,
 				39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */,
 				39BF17AF1EF1D8B500BB834B /* TimeView.swift in Sources */,
@@ -222,6 +241,7 @@
 				39D892421EF4BEBF0063F53D /* ColorGenerator.swift in Sources */,
 				39BF179A1EF1C2D400BB834B /* AppDelegate.swift in Sources */,
 				39BF17B01EF1D8B800BB834B /* TimeView.swift in Sources */,
+				39B2D0301EF59B190068BB3F /* Fonts.swift in Sources */,
 				39D8923F1EF48C1D0063F53D /* ColorCodeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

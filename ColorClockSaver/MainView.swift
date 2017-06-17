@@ -10,6 +10,7 @@ class MainView: ScreenSaverView {
     layoutViews()
     timeView.resizeFont(for: bounds.size)
     colorCodeView.resizeFont(for: bounds.size)
+    Fonts.load(fontName: Fonts.timeFont, extension: "ttf")
   }
 
   func layoutViews() {

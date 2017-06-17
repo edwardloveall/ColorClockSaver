@@ -18,7 +18,7 @@ class ColorCodeView: NSTextField {
     isBezeled = false
     isBordered = false
     isEditable = false
-    font = NSFont(name: "mononoki", size: 0)
+    font = NSFont(name: Fonts.colorCodeFont, size: 0)
   }
 
   func update() {
@@ -27,6 +27,6 @@ class ColorCodeView: NSTextField {
 
   func resizeFont(for size: NSSize) {
     let newFontSize = size.width * 0.0212
-    font = NSFont(name: "mononoki", size: newFontSize)
+    font = NSFont(name: Fonts.colorCodeFont, size: newFontSize)
   }
 }
