@@ -43,4 +43,12 @@ class ColorGenerator {
 
     return color
   }
+
+  func darkenedColorFromTime() -> NSColor {
+    let startColor = colorFromTime()
+    guard let endColor = startColor.blended(withFraction: 0.12, of: .black)
+      else { fatalError("could not crate darker gradient color") }
+
+    return endColor
+  }
 }

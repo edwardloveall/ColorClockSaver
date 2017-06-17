@@ -29,8 +29,9 @@ class MainView: ScreenSaverView {
   }
 
   override func draw(_ rect: NSRect) {
-    let timeColor = colorGenerator.colorFromTime()
-    if let gradient = NSGradient(starting: timeColor, ending: timeColor) {
+    let startingColor = colorGenerator.colorFromTime()
+    let endingColor = colorGenerator.darkenedColorFromTime()
+    if let gradient = NSGradient(starting: startingColor, ending: endingColor) {
       gradient.draw(in: rect, relativeCenterPosition: NSPoint.zero)
     }
     timeView.update()
