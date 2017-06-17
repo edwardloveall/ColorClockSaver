@@ -22,10 +22,9 @@ class MainView: ScreenSaverView {
 
     wrapperView.translatesAutoresizingMaskIntoConstraints = false
 
-    wrapperView.topAnchor.constraint(equalTo: topAnchor).isActive = true
     wrapperView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
     wrapperView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
-    wrapperView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
+    wrapperView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
   }
 
   override func draw(_ rect: NSRect) {
