@@ -18,4 +18,13 @@ class ColorGenerator {
       blue: Int(hexSecond)
     )
   }
+
+  func hexColorFromTime() -> String {
+    let rgbValues = rgbComponentsFromTime()
+    let hexRed = String(format: "%02x", rgbValues.red)
+    let hexGreen = String(format: "%02x", rgbValues.green)
+    let hexBlue = String(format: "%02x", rgbValues.blue)
+
+    return "\(hexRed)\(hexGreen)\(hexBlue)".uppercased()
+  }
 }

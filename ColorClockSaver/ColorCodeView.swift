@@ -22,20 +22,11 @@ class ColorCodeView: NSTextField {
   }
 
   func update() {
-    stringValue = convertTimeToHex()
+    stringValue = colorGen.hexColorFromTime()
   }
 
   func resizeFont(for size: NSSize) {
     let newFontSize = size.width * 0.0212
     font = NSFont(name: "mononoki", size: newFontSize)
-  }
-
-  func convertTimeToHex() -> String {
-    let rgbValues = colorGen.rgbComponentsFromTime()
-    let hexHourString = String(format: "%02x", rgbValues.red).uppercased()
-    let hexMinuteString = String(format: "%02x", rgbValues.green).uppercased()
-    let hexSecondString = String(format: "%02x", rgbValues.blue).uppercased()
-
-    return "\(hexHourString)\(hexMinuteString)\(hexSecondString)"
   }
 }
