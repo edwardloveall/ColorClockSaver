@@ -4,6 +4,7 @@ class MainView: ScreenSaverView {
   let wrapperView = NSStackView()
   let timeView = TimeView()
   let colorCodeView = ColorCodeView()
+  let colorGenerator = ColorGenerator()
 
   override func viewDidMoveToWindow() {
     layoutViews()
@@ -28,6 +29,10 @@ class MainView: ScreenSaverView {
   }
 
   override func draw(_ rect: NSRect) {
+    let timeColor = colorGenerator.colorFromTime()
+    if let gradient = NSGradient(starting: timeColor, ending: timeColor) {
+      gradient.draw(in: rect, relativeCenterPosition: NSPoint.zero)
+    }
     timeView.update()
     colorCodeView.update()
   }

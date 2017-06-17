@@ -31,4 +31,16 @@ class ColorGenerator {
 
     return "\(hexRed)\(hexGreen)\(hexBlue)".uppercased()
   }
+
+  func colorFromTime() -> NSColor {
+    let components = rgbComponentsFromTime()
+    let color = NSColor(
+      calibratedRed: CGFloat(components.red),
+      green: CGFloat(components.green),
+      blue: CGFloat(components.blue),
+      alpha: 1
+    )
+
+    return color
+  }
 }
