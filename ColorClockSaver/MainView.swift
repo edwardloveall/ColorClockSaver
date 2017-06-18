@@ -6,6 +6,7 @@ class MainView: ScreenSaverView {
   let colorCodeView = ColorCodeView()
 
   override func viewDidMoveToWindow() {
+    animationTimeInterval = 1
     Fonts.load(fontName: Fonts.timeFont, extension: "ttf")
     layoutViews()
     timeView.resizeFont(for: bounds.size)
