@@ -14,6 +14,8 @@ class Fonts {
 
     var error: Unmanaged<CFError>? = nil
     CTFontManagerRegisterFontsForURL(url as CFURL, .process, &error)
-    NSLog(String(describing: error))
+    if error != nil {
+      NSLog(String(describing: error))
+    }
   }
 }
