@@ -1,8 +1,6 @@
 import Cocoa
 
 class ColorCodeView: NSTextField {
-  let colorGen = ColorGenerator()
-
   override init(frame frameRect: NSRect) {
     super.init(frame: frameRect)
     setup()
@@ -22,7 +20,7 @@ class ColorCodeView: NSTextField {
   }
 
   func update() {
-    stringValue = colorGen.hexColorFromTime()
+    stringValue = Date().asHexColorString()
   }
 
   func resizeFont(for size: NSSize) {

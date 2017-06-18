@@ -4,7 +4,6 @@ class MainView: ScreenSaverView {
   let wrapperView = NSStackView()
   let timeView = TimeView()
   let colorCodeView = ColorCodeView()
-  let colorGenerator = ColorGenerator()
 
   override func viewDidMoveToWindow() {
     Fonts.load(fontName: Fonts.timeFont, extension: "ttf")
@@ -30,8 +29,9 @@ class MainView: ScreenSaverView {
   }
 
   override func draw(_ rect: NSRect) {
-    let startingColor = colorGenerator.colorFromTime()
-    let endingColor = colorGenerator.darkenedColorFromTime()
+    let date = Date()
+    let startingColor = date.asColor()
+    let endingColor = date.asDarkenedColor()
     if let gradient = NSGradient(starting: startingColor, ending: endingColor) {
       gradient.draw(in: rect, relativeCenterPosition: NSPoint.zero)
     }

@@ -1,7 +1,7 @@
 import Cocoa
 
-class ColorGenerator {
-  func rgbComponentsFromTime() -> (red: Double, green: Double, blue: Double) {
+extension Date {
+  private func asRGBComonents() -> (red: Double, green: Double, blue: Double) {
     let calendar = Calendar(identifier: .gregorian)
     let date = Date()
     let hour = calendar.component(.hour, from: date)
@@ -19,8 +19,8 @@ class ColorGenerator {
     )
   }
 
-  func hexColorFromTime() -> String {
-    let rgbValues = rgbComponentsFromTime()
+  func asHexColorString() -> String {
+    let rgbValues = asRGBComonents()
     let scaledRed = Int(rgbValues.red * 255)
     let scaledGreen = Int(rgbValues.green * 255)
     let scaledBlue = Int(rgbValues.blue * 255)
@@ -32,8 +32,8 @@ class ColorGenerator {
     return "\(hexRed)\(hexGreen)\(hexBlue)".uppercased()
   }
 
-  func colorFromTime() -> NSColor {
-    let components = rgbComponentsFromTime()
+  func asColor() -> NSColor {
+    let components = asRGBComonents()
     let color = NSColor(
       calibratedRed: CGFloat(components.red),
       green: CGFloat(components.green),
@@ -44,8 +44,8 @@ class ColorGenerator {
     return color
   }
 
-  func darkenedColorFromTime() -> NSColor {
-    let startColor = colorFromTime()
+  func asDarkenedColor() -> NSColor {
+    let startColor = asColor()
     guard let endColor = startColor.blended(withFraction: 0.12, of: .black)
       else { fatalError("could not crate darker gradient color") }
 

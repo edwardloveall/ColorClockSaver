@@ -5,8 +5,8 @@ class Fonts {
   static let colorCodeFont = "mononoki-Regular"
 
   static func load(fontName name: String, extension suffix: String) {
+    let bundle = Bundle(for: self)
     guard
-      let bundle = Bundle(identifier: "com.edwardloveall.ColorClockSaver"),
       let url = bundle.url(forResource: name, withExtension: suffix)
     else {
       fatalError("Could not load font: \(name).\(suffix)")
