@@ -12,6 +12,7 @@ class BackgroundView: NSView {
   }
 
   func setup() {
+    wantsLayer = true
     if let layer = layer {
       let date = Date()
       layer.backgroundColor = date.asColor().cgColor
