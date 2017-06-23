@@ -4,7 +4,6 @@ class MainView: ScreenSaverView {
   let wrapperView = NSStackView()
   let timeView = TimeView()
   let colorCodeView = ColorCodeView()
-  var currentBackground = Date().asColor().cgColor
 
   override func viewDidMoveToWindow() {
     wantsLayer = true
@@ -35,17 +34,17 @@ class MainView: ScreenSaverView {
     wrapperView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
   }
 
+  override func draw(_ rect: NSRect) {}
+
   override func animateOneFrame() {
     let date = Date()
     let newColor = date.asColor().cgColor
-    let animation = CABasicAnimation(keyPath: "backgroundColor")
-    animation.fromValue = currentBackground
-    animation.toValue = newColor
-    animation.duration = 1
 
     if let layer = layer {
-      layer.add(animation, forKey: "backgroundColor")
-      currentBackground = newColor
+      let fade = CATransition()
+      fade.duration = 0.1
+      layer.add(fade, forKey: "transition")
+      layer.backgroundColor = newColor
     }
     timeView.update()
     colorCodeView.update()
