@@ -14,6 +14,7 @@ class MainView: ScreenSaverView {
     layoutViews()
 
     Fonts.load(fontName: Fonts.timeFont, extension: "ttf")
+    animateOneFrame()
   }
 
   func configureViews() {
