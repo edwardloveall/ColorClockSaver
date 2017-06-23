@@ -1,16 +1,13 @@
 import ScreenSaver
 
 class MainView: ScreenSaverView {
+  let backgroundView = BackgroundView()
   let wrapperView = NSStackView()
   let timeView = TimeView()
   let colorCodeView = ColorCodeView()
 
   override func viewDidMoveToWindow() {
     wantsLayer = true
-    if let layer = layer {
-      let date = Date()
-      layer.backgroundColor = date.asColor().cgColor
-    }
     animationTimeInterval = 1
     Fonts.load(fontName: Fonts.timeFont, extension: "ttf")
     layoutViews()
@@ -19,6 +16,14 @@ class MainView: ScreenSaverView {
   }
 
   func layoutViews() {
+    addSubview(backgroundView)
+    backgroundView.translatesAutoresizingMaskIntoConstraints = false
+
+    backgroundView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+    backgroundView.heightAnchor.constraint(equalTo: heightAnchor).isActive = true
+    backgroundView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+    backgroundView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
+
     wrapperView.frame = frame
     wrapperView.alignment = .centerX
     wrapperView.orientation = .vertical
@@ -37,15 +42,7 @@ class MainView: ScreenSaverView {
   override func draw(_ rect: NSRect) {}
 
   override func animateOneFrame() {
-    let date = Date()
-    let newColor = date.asColor().cgColor
-
-    if let layer = layer {
-      let fade = CATransition()
-      fade.duration = 0.1
-      layer.add(fade, forKey: "transition")
-      layer.backgroundColor = newColor
-    }
+    backgroundView.update()
     timeView.update()
     colorCodeView.update()
     setNeedsDisplay(bounds)
