@@ -24,7 +24,6 @@ class MainView: ScreenSaverView {
     backgroundView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
     backgroundView.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
 
-    wrapperView.frame = frame
     wrapperView.alignment = .centerX
     wrapperView.orientation = .vertical
     wrapperView.distribution = .equalCentering
