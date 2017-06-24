@@ -10,11 +10,15 @@ class MainView: ScreenSaverView {
     wantsLayer = true
     animationTimeInterval = 1
 
+    loadFonts()
     configureViews()
     layoutViews()
 
-    Fonts.load(fontName: Fonts.timeFont, extension: "ttf")
     animateOneFrame()
+  }
+
+  func loadFonts() {
+    Fonts.load(fontName: Fonts.timeFont, extension: "ttf")
   }
 
   func configureViews() {
@@ -25,8 +29,6 @@ class MainView: ScreenSaverView {
     wrapperView.addArrangedSubview(colorCodeView)
     addSubview(backgroundView)
     addSubview(wrapperView)
-    timeView.resizeFont(for: bounds.size)
-    colorCodeView.resizeFont(for: bounds.size)
   }
 
   func layoutViews() {
