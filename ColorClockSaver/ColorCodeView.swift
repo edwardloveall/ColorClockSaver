@@ -20,7 +20,14 @@ class ColorCodeView: NSTextField {
   }
 
   func update() {
-    stringValue = Date().asHexColorString()
+    let date = Date()
+    stringValue = date.asHexColorString()
+
+    if date.asColor().isLight {
+      textColor = .black
+    } else {
+      textColor = .white
+    }
   }
 
   func resizeFont(for size: NSSize) {

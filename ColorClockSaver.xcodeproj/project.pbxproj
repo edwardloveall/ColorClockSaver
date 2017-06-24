@@ -24,6 +24,8 @@
 		39D984771EF40F3E006E0617 /* ColorCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D984761EF40F3E006E0617 /* ColorCodeView.swift */; };
 		39E88BC41EFD92050014F7EF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E88BC31EFD92050014F7EF /* BackgroundView.swift */; };
 		39E88BC51EFD92890014F7EF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E88BC31EFD92050014F7EF /* BackgroundView.swift */; };
+		39E88BC71EFDEC390014F7EF /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E88BC61EFDEC390014F7EF /* NSColor.swift */; };
+		39E88BC81EFDF3060014F7EF /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E88BC61EFDEC390014F7EF /* NSColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,7 @@
 		39D892401EF4BEBD0063F53D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.swift; path = ColorClockSaver/Date.swift; sourceTree = "<group>"; };
 		39D984761EF40F3E006E0617 /* ColorCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCodeView.swift; sourceTree = "<group>"; };
 		39E88BC31EFD92050014F7EF /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		39E88BC61EFDEC390014F7EF /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				39D892401EF4BEBD0063F53D /* Date.swift */,
+				39E88BC61EFDEC390014F7EF /* NSColor.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -241,6 +245,7 @@
 				39D984771EF40F3E006E0617 /* ColorCodeView.swift in Sources */,
 				39B2D02F1EF59B190068BB3F /* Fonts.swift in Sources */,
 				39D892411EF4BEBD0063F53D /* Date.swift in Sources */,
+				39E88BC71EFDEC390014F7EF /* NSColor.swift in Sources */,
 				39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */,
 				39BF17AF1EF1D8B500BB834B /* TimeView.swift in Sources */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39E88BC81EFDF3060014F7EF /* NSColor.swift in Sources */,
 				39BF17A61EF1C2DA00BB834B /* MainView.swift in Sources */,
 				39D892421EF4BEBF0063F53D /* Date.swift in Sources */,
 				39BF179A1EF1C2D400BB834B /* AppDelegate.swift in Sources */,

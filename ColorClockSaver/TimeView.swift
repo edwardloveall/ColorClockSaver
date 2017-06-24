@@ -26,6 +26,12 @@ class TimeView: NSTextField {
     let dateString = formatter.string(from: date)
 
     stringValue = dateString
+
+    if date.asColor().isLight {
+      textColor = .black
+    } else {
+      textColor = .white
+    }
   }
 
   func resizeFont(for size: NSSize) {
