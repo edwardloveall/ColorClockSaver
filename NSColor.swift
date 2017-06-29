@@ -12,4 +12,12 @@ extension NSColor {
   var isLight: Bool {
     return luma >= 0.6
   }
+
+  func appropriateBlackOrWhite() -> NSColor {
+    if isLight {
+      return .black
+    } else {
+      return .white
+    }
+  }
 }
