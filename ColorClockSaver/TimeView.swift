@@ -17,6 +17,7 @@ class TimeView: NSTextField {
     isBordered = false
     isEditable = false
     font = NSFont(name: Fonts.timeFont, size: 0)
+    wantsLayer = true
   }
 
   func update() {
@@ -26,7 +27,9 @@ class TimeView: NSTextField {
     let dateString = formatter.string(from: date)
 
     stringValue = dateString
-    textColor = date.asColor().appropriateBlackOrWhite()
+
+    NSAnimationContext.current().duration = 0.9
+    animator().textColor = date.asColor().appropriateBlackOrWhite()
   }
 
   func resizeFont(for size: NSSize) {
