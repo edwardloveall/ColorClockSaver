@@ -28,8 +28,10 @@ class TimeView: NSTextField {
 
     stringValue = dateString
 
+    NSAnimationContext.beginGrouping()
     NSAnimationContext.current().duration = 0.9
     animator().textColor = date.asColor().appropriateBlackOrWhite()
+    NSAnimationContext.endGrouping()
   }
 
   func resizeFont(for size: NSSize) {
