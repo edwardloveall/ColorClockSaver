@@ -28,10 +28,13 @@ class TimeView: NSTextField {
 
     stringValue = dateString
 
-    NSAnimationContext.beginGrouping()
-    NSAnimationContext.current().duration = 0.9
-    animator().textColor = date.asColor().appropriateBlackOrWhite()
-    NSAnimationContext.endGrouping()
+    guard let layer = layer else {
+      fatalError("Could not find CALayer on TimeView")
+    }
+    let fade = CATransition()
+    fade.duration = 0.9
+    layer.add(fade, forKey: nil)
+    textColor = date.asColor().appropriateBlackOrWhite()
   }
 
   func resizeFont(for size: NSSize) {
