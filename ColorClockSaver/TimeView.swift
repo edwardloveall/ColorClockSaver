@@ -26,16 +26,18 @@ class TimeView: NSTextField {
     formatter.dateFormat = "HH:mm:ss"
     let dateString = formatter.string(from: date)
 
-    stringValue = dateString
-
-    let fade = CABasicAnimation(keyPath: "textColor")
-    fade.fromValue = textColor
-    fade.toValue = date.asColor().appropriateBlackOrWhite()
-    fade.duration = 0.9
-    if let layer = layer {
-      layer.add(fade, forKey: fade.keyPath)
-      textColor = date.asColor().appropriateBlackOrWhite()
+    guard let layer = self.layer else {
+      fatalError("Could not find CALayer on TimeView")
     }
+
+    NSAnimationContext.runAnimationGroup({ (context: NSAnimationContext) -> Void in
+      self.stringValue = dateString
+    }, completionHandler: { () -> Void in
+      let fade = CATransition()
+      fade.duration = 0.3
+      layer.add(fade, forKey: nil)
+      self.textColor = date.asColor().appropriateBlackOrWhite()
+    })
   }
 
   func resizeFont(for size: NSSize) {
