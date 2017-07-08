@@ -17,7 +17,6 @@ class TimeView: NSTextField {
     isBordered = false
     isEditable = false
     font = NSFont(name: Fonts.timeFont, size: 0)
-    wantsLayer = true
   }
 
   func update() {
@@ -25,23 +24,31 @@ class TimeView: NSTextField {
     let formatter = DateFormatter()
     formatter.dateFormat = "HH:mm:ss"
     let dateString = formatter.string(from: date)
+    stringValue = dateString
 
-    guard let layer = self.layer else {
-      fatalError("Could not find CALayer on TimeView")
-    }
-
-    NSAnimationContext.runAnimationGroup({ (context: NSAnimationContext) -> Void in
-      self.stringValue = dateString
-    }, completionHandler: { () -> Void in
-      let fade = CATransition()
-      fade.duration = 0.3
-      layer.add(fade, forKey: nil)
-      self.textColor = date.asColor().appropriateBlackOrWhite()
-    })
+    fade(to: date.asColor().appropriateBlackOrWhite())
   }
 
   func resizeFont(for size: NSSize) {
     let newFontSize = size.width * 0.1
     font = NSFont(name: Fonts.timeFont, size: newFontSize)
   }
+
+  func fade(to toColor: NSColor) {
+    guard let textColor = textColor else { return }
+    var stepCount: CGFloat = 1
+    let fromColor = textColor
+
+    Timer.scheduledTimer(withTimeInterval: 1/60, repeats: true) { (timer) in
+      let fraction = stepCount / CGFloat(20)
+
+      if fraction >= 1 {
+        timer.invalidate()
+      }
+      self.textColor = fromColor.blended(withFraction: CGFloat(fraction),
+                                         of: toColor)
+      stepCount += 1
+    }
+  }
 }
+
