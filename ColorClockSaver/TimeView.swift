@@ -8,6 +8,7 @@ class TimeView: LabelView {
     isEditable = false
     font = NSFont(name: Fonts.timeFont, size: 0)
     backgroundWasLight = Date().asColor().isLight
+    textColor = Date().asColor().appropriateBlackOrWhite()
   }
 
   func update() {
