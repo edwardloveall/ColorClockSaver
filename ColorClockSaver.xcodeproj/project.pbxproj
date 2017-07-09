@@ -26,6 +26,8 @@
 		39E88BC51EFD92890014F7EF /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E88BC31EFD92050014F7EF /* BackgroundView.swift */; };
 		39E88BC71EFDEC390014F7EF /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E88BC61EFDEC390014F7EF /* NSColor.swift */; };
 		39E88BC81EFDF3060014F7EF /* NSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E88BC61EFDEC390014F7EF /* NSColor.swift */; };
+		39EA84F11F11A7B1008E1F7E /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA84F01F11A7B1008E1F7E /* LabelView.swift */; };
+		39EA84F21F11A94C008E1F7E /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39EA84F01F11A7B1008E1F7E /* LabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,7 @@
 		39D984761EF40F3E006E0617 /* ColorCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCodeView.swift; sourceTree = "<group>"; };
 		39E88BC31EFD92050014F7EF /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		39E88BC61EFDEC390014F7EF /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
+		39EA84F01F11A7B1008E1F7E /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 			children = (
 				39BF177D1EF1BA0600BB834B /* MainView.swift */,
 				39E88BC31EFD92050014F7EF /* BackgroundView.swift */,
+				39EA84F01F11A7B1008E1F7E /* LabelView.swift */,
 				39BF17AE1EF1D8B500BB834B /* TimeView.swift */,
 				39D984761EF40F3E006E0617 /* ColorCodeView.swift */,
 				39B2D02E1EF59B190068BB3F /* Fonts.swift */,
@@ -243,6 +247,7 @@
 			files = (
 				39E88BC41EFD92050014F7EF /* BackgroundView.swift in Sources */,
 				39D984771EF40F3E006E0617 /* ColorCodeView.swift in Sources */,
+				39EA84F11F11A7B1008E1F7E /* LabelView.swift in Sources */,
 				39B2D02F1EF59B190068BB3F /* Fonts.swift in Sources */,
 				39D892411EF4BEBD0063F53D /* Date.swift in Sources */,
 				39E88BC71EFDEC390014F7EF /* NSColor.swift in Sources */,
@@ -257,6 +262,7 @@
 			files = (
 				39E88BC81EFDF3060014F7EF /* NSColor.swift in Sources */,
 				39BF17A61EF1C2DA00BB834B /* MainView.swift in Sources */,
+				39EA84F21F11A94C008E1F7E /* LabelView.swift in Sources */,
 				39D892421EF4BEBF0063F53D /* Date.swift in Sources */,
 				39BF179A1EF1C2D400BB834B /* AppDelegate.swift in Sources */,
 				39E88BC51EFD92890014F7EF /* BackgroundView.swift in Sources */,
