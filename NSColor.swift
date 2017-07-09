@@ -20,4 +20,21 @@ extension NSColor {
       return .white
     }
   }
+
+  func rgbaComponents() -> [CGFloat] {
+    var rgba: [CGFloat] = [0, 0, 0, 0]
+    getComponents(&rgba)
+    return rgba
+  }
+
+  func isColorEqual(_ other: NSColor) -> Bool {
+    guard
+      let converted = self.usingColorSpace(.sRGB),
+      let otherConverted = other.usingColorSpace(.sRGB)
+    else {
+      return false
+    }
+
+    return converted.rgbaComponents() == otherConverted.rgbaComponents()
+  }
 }
