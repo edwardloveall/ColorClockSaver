@@ -45,7 +45,7 @@
 		39D892401EF4BEBD0063F53D /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date.swift; path = ColorClockSaver/Date.swift; sourceTree = "<group>"; };
 		39D984761EF40F3E006E0617 /* ColorCodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCodeView.swift; sourceTree = "<group>"; };
 		39E88BC31EFD92050014F7EF /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		39E88BC61EFDEC390014F7EF /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColor.swift; sourceTree = "<group>"; };
+		39E88BC61EFDEC390014F7EF /* NSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSColor.swift; path = ColorClockSaver/NSColor.swift; sourceTree = "<group>"; };
 		39EA84F01F11A7B1008E1F7E /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
