@@ -17,7 +17,8 @@ class ColorCodeView: LabelView {
     stringValue = date.asHexColorString()
 
     if dateColor.isLight != backgroundWasLight  {
-      fade(to: dateColor.appropriateBlackOrWhite())
+      let blackOrWhite = dateColor.appropriateBlackOrWhite()
+      fade(to: blackOrWhite.withAlphaComponent(preventBurnInAlpha))
     }
     backgroundWasLight = dateColor.isLight
   }

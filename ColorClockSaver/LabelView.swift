@@ -1,6 +1,8 @@
 import Cocoa
 
 class LabelView: NSTextField {
+  let preventBurnInAlpha: CGFloat = 0.9
+
   var frameCount: CGFloat = 1
   var startColor = NSColor.black
   var endColor = NSColor.black
