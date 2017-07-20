@@ -15,7 +15,7 @@ class TimeView: LabelView {
     let date = Date()
     let dateColor = date.asColor()
     let formatter = DateFormatter()
-    formatter.dateFormat = "HH:mm:ss"
+    formatter.dateFormat = Settings.dateFormat()
     let dateString = formatter.string(from: date)
     stringValue = dateString
 
