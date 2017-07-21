@@ -1,6 +1,8 @@
 import Cocoa
 
 class TimeView: LabelView {
+  let settings = Settings()
+
   override func setup() {
     drawsBackground = false
     isBezeled = false
@@ -15,7 +17,7 @@ class TimeView: LabelView {
     let date = Date()
     let dateColor = date.asColor()
     let formatter = DateFormatter()
-    formatter.dateFormat = Settings.dateFormat()
+    formatter.dateFormat = settings.dateFormat()
     let dateString = formatter.string(from: date)
     stringValue = dateString
 
