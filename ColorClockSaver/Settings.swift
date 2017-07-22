@@ -1,22 +1,24 @@
 import ScreenSaver
 
 class Settings {
+  let defaults = Settings.screenSaverDefaults()
+
   func register() {
     let values: [String: Any] = [
       "isTwelveHour": false
     ]
-    screenSaverDefaults().register(defaults: values)
+    defaults.register(defaults: values)
   }
 
   func dateFormat() -> String {
-    if screenSaverDefaults().bool(forKey: "isTwelveHour") {
+    if defaults.bool(forKey: "isTwelveHour") {
       return "h:mm:ss"
     } else {
       return "HH:mm:ss"
     }
   }
 
-  private func screenSaverDefaults() -> ScreenSaverDefaults {
+  private static func screenSaverDefaults() -> ScreenSaverDefaults {
     guard let bundleId = Bundle(for: Settings.self).bundleIdentifier else {
       fatalError("Could not find a bundle identifier")
     }
