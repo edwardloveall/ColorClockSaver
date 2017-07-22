@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		39508BE21F213D30006D2C6C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39508BE11F213D30006D2C6C /* Settings.swift */; };
 		39508BE31F213DA4006D2C6C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39508BE11F213D30006D2C6C /* Settings.swift */; };
+		399F63A51F2378100057D072 /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399F63A41F2378100057D072 /* ConfigureSheetController.swift */; };
+		399F63A61F2378230057D072 /* ConfigureSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399F63A41F2378100057D072 /* ConfigureSheetController.swift */; };
+		399F63A81F2378820057D072 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399F63A71F2378820057D072 /* ConfigureSheet.xib */; };
+		399F63A91F237B390057D072 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399F63A71F2378820057D072 /* ConfigureSheet.xib */; };
 		39B2D0291EF591460068BB3F /* mononoki-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */; };
 		39B2D02A1EF591460068BB3F /* mononoki-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */; };
 		39B2D02F1EF59B190068BB3F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B2D02E1EF59B190068BB3F /* Fonts.swift */; };
@@ -34,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		39508BE11F213D30006D2C6C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		399F63A41F2378100057D072 /* ConfigureSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSheetController.swift; sourceTree = "<group>"; };
+		399F63A71F2378820057D072 /* ConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mononoki-Regular.ttf"; path = "Assets/mononoki-Regular.ttf"; sourceTree = "<group>"; };
 		39B2D02E1EF59B190068BB3F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		39BF17701EF1B98E00BB834B /* ColorClockSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorClockSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +123,8 @@
 				39D984761EF40F3E006E0617 /* ColorCodeView.swift */,
 				39508BE11F213D30006D2C6C /* Settings.swift */,
 				39B2D02E1EF59B190068BB3F /* Fonts.swift */,
+				399F63A41F2378100057D072 /* ConfigureSheetController.swift */,
+				399F63A71F2378820057D072 /* ConfigureSheet.xib */,
 				39BF17771EF1B98E00BB834B /* Info.plist */,
 			);
 			path = ColorClockSaver;
@@ -228,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				399F63A81F2378820057D072 /* ConfigureSheet.xib in Resources */,
 				39B2D0291EF591460068BB3F /* mononoki-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +247,7 @@
 			files = (
 				39B2D02A1EF591460068BB3F /* mononoki-Regular.ttf in Resources */,
 				39BF179E1EF1C2D400BB834B /* Assets.xcassets in Resources */,
+				399F63A91F237B390057D072 /* ConfigureSheet.xib in Resources */,
 				39BF17AB1EF1C8DC00BB834B /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +263,7 @@
 				39D984771EF40F3E006E0617 /* ColorCodeView.swift in Sources */,
 				39EA84F11F11A7B1008E1F7E /* LabelView.swift in Sources */,
 				39B2D02F1EF59B190068BB3F /* Fonts.swift in Sources */,
+				399F63A51F2378100057D072 /* ConfigureSheetController.swift in Sources */,
 				39D892411EF4BEBD0063F53D /* Date.swift in Sources */,
 				39E88BC71EFDEC390014F7EF /* NSColor.swift in Sources */,
 				39508BE21F213D30006D2C6C /* Settings.swift in Sources */,
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				399F63A61F2378230057D072 /* ConfigureSheetController.swift in Sources */,
 				39E88BC81EFDF3060014F7EF /* NSColor.swift in Sources */,
 				39BF17A61EF1C2DA00BB834B /* MainView.swift in Sources */,
 				39EA84F21F11A94C008E1F7E /* LabelView.swift in Sources */,

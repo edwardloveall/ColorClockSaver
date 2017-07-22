@@ -4,6 +4,7 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
   @IBOutlet weak var window: NSWindow!
+  let configureSheetController = ConfigureSheetController()
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     guard let screenSaverView = window.contentView as? MainView
@@ -25,6 +26,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
 
   func applicationWillTerminate(_ aNotification: Notification) {}
+
+  @IBAction func openConfigureSheet(sender: NSMenuItem) {
+    window.beginSheet(configureSheetController.window!, completionHandler: nil)
+  }
 }
 
 extension AppDelegate: NSWindowDelegate {
