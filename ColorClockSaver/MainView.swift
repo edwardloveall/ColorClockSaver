@@ -10,7 +10,7 @@ class MainView: ScreenSaverView {
     wantsLayer = true
     animationTimeInterval = 1
 
-    Settings.register()
+    Settings().register()
     loadFonts()
     configureViews()
     layoutViews()
