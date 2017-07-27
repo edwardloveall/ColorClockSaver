@@ -7,6 +7,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   let configureSheetController = ConfigureSheetController()
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
+    setDefaults()
     guard let screenSaverView = window.contentView as? MainView
       else { fatalError("could not cast window's contentView as a MainView") }
     guard let screen = NSScreen.main()
@@ -29,6 +30,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   @IBAction func openConfigureSheet(sender: NSMenuItem) {
     window.beginSheet(configureSheetController.window!, completionHandler: nil)
+  }
+
+  func setDefaults() {
+    let args = CommandLine.arguments
+    let defaults = Settings()
+    if let index = args.index(of: "-isTwelveHour") {
+      let value = args[index + 1] == "YES" ? true : false
+      defaults.isTwelveHour = value
+    }
   }
 }
 
