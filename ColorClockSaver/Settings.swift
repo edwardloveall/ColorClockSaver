@@ -26,6 +26,14 @@ class Settings {
     }
   }
 
+  func twelveHourStateForCheckBox() -> Int {
+    if isTwelveHour {
+      return NSOnState
+    } else {
+      return NSOffState
+    }
+  }
+
   private static func screenSaverDefaults() -> ScreenSaverDefaults {
     guard let bundleId = Bundle(for: Settings.self).bundleIdentifier else {
       fatalError("Could not find a bundle identifier")

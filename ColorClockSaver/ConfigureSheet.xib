@@ -8,6 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ConfigureSheetController" customModule="ColorClockSaver" customModuleProvider="target">
             <connections>
+                <outlet property="twelveHourCheck" destination="QB0-0I-mR6" id="6wQ-Vu-acp"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="uXc-Nd-OsF"/>
             </connections>
         </customObject>
@@ -35,6 +36,14 @@ DQ
                         <connections>
                             <action selector="doneWithSender:" target="-2" id="B0C-Nh-GQp"/>
                         </connections>
+                    </button>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QB0-0I-mR6">
+                        <rect key="frame" x="210" y="126" width="61" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GW3-Z2-7fB">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
                     </button>
                 </subviews>
             </view>
