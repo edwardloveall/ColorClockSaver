@@ -1,4 +1,4 @@
-![A screenshot of the ColorClock Screensaver](./screenshot.png)
+![A screenshot of the ColorClock Screensaver](./Resources/screenshot.png)
 
 # A ScreenSaver for macOS
 
