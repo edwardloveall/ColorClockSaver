@@ -2,6 +2,14 @@ import ScreenSaver
 
 class Settings {
   let defaults = Settings.screenSaverDefaults()
+  var isTwelveHour: Bool {
+    get {
+      return defaults.bool(forKey: "isTwelveHour")
+    }
+    set(value) {
+      defaults.set(value, forKey: "isTwelveHour")
+    }
+  }
 
   func register() {
     let values: [String: Any] = [
