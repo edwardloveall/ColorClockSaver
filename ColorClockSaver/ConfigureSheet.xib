@@ -44,6 +44,9 @@ DQ
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="setTwelveHourWithSender:" target="-2" id="eSs-Gg-Ud1"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>

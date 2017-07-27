@@ -21,4 +21,13 @@ class ConfigureSheetController: NSWindowController {
     }
     sheetParent.endSheet(window)
   }
+
+  @IBAction func setTwelveHour(sender: NSButton) {
+    let value = sender.state
+    if value == NSOnState {
+      settings.isTwelveHour = true
+    } else {
+      settings.isTwelveHour = false
+    }
+  }
 }
