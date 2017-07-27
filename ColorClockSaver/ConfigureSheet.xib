@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="ConfigureSheetController" customModule="ColorClockSaver" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="ConfigureSheet" customModule="ColorClockSaver" customModuleProvider="target">
             <connections>
                 <outlet property="twelveHourCheck" destination="QB0-0I-mR6" id="6wQ-Vu-acp"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="uXc-Nd-OsF"/>
@@ -14,11 +14,11 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="254" height="95"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="254" height="95"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -31,7 +31,7 @@
                             <font key="font" metaFont="system"/>
                         </buttonCell>
                         <connections>
-                            <action selector="setTwelveHourWithSender:" target="-2" id="eSs-Gg-Ud1"/>
+                            <action selector="setTwelveHour:" target="-2" id="F33-Zp-BdN"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rvr-ZJ-hKg">
@@ -45,7 +45,7 @@ DQ
 </string>
                         </buttonCell>
                         <connections>
-                            <action selector="doneWithSender:" target="-2" id="B0C-Nh-GQp"/>
+                            <action selector="done:" target="-2" id="9qF-1u-fFM"/>
                         </connections>
                     </button>
                 </subviews>

@@ -3,8 +3,8 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-  @IBOutlet weak var window: NSWindow!
-  let configureSheetController = ConfigureSheetController()
+  @IBOutlet var window: NSWindow!
+  let configureSheet = ConfigureSheet.sharedInstance
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     setDefaults()
@@ -29,7 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   func applicationWillTerminate(_ aNotification: Notification) {}
 
   @IBAction func openConfigureSheet(sender: NSMenuItem) {
-    window.beginSheet(configureSheetController.window!, completionHandler: nil)
+    window.beginSheet(configureSheet.window, completionHandler: nil)
   }
 
   func setDefaults() {
