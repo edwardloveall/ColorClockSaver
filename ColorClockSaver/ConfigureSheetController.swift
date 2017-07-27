@@ -14,12 +14,11 @@ class ConfigureSheetController: NSWindowController {
 
   @IBAction func done(sender: NSButton) {
     guard
-      let window = window,
-      let sheetParent = window.sheetParent
+      let window = window
     else {
-      fatalError("Could not get configure sheet parent")
+      fatalError("Could not get configure sheet window")
     }
-    sheetParent.endSheet(window)
+    NSApp.endSheet(window)
   }
 
   @IBAction func setTwelveHour(sender: NSButton) {

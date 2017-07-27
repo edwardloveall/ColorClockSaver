@@ -5,6 +5,7 @@ class MainView: ScreenSaverView {
   let wrapperView = NSStackView()
   let timeView = TimeView()
   let colorCodeView = ColorCodeView()
+  lazy var configureSheetController = ConfigureSheetController()
 
   override func viewDidMoveToWindow() {
     wantsLayer = true
@@ -56,5 +57,13 @@ class MainView: ScreenSaverView {
     timeView.update()
     colorCodeView.update()
     setNeedsDisplay(bounds)
+  }
+
+  override func hasConfigureSheet() -> Bool {
+    return true
+  }
+
+  override func configureSheet() -> NSWindow? {
+    return configureSheetController.window
   }
 }
