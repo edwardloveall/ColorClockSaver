@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39300F181F2A80AB0089C010 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 39300F171F2A80A30089C010 /* thumbnail.png */; };
 		39508BE21F213D30006D2C6C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39508BE11F213D30006D2C6C /* Settings.swift */; };
 		39508BE31F213DA4006D2C6C /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39508BE11F213D30006D2C6C /* Settings.swift */; };
 		399F63A51F2378100057D072 /* ConfigureSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399F63A41F2378100057D072 /* ConfigureSheet.swift */; };
@@ -37,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39300F171F2A80A30089C010 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		39300F1B1F2ACB1D0089C010 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		39508BE11F213D30006D2C6C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		399F63A41F2378100057D072 /* ConfigureSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSheet.swift; sourceTree = "<group>"; };
 		399F63A71F2378820057D072 /* ConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
@@ -76,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39300F141F2A7E180089C010 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39300F171F2A80A30089C010 /* thumbnail.png */,
+				39300F1B1F2ACB1D0089C010 /* thumbnail@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		3988956C1EF6E32E0006DD3C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 				39B2D0271EF5912C0068BB3F /* Assets */,
 				3988956C1EF6E32E0006DD3C /* Extensions */,
 				39BF17711EF1B98E00BB834B /* Products */,
+				39300F141F2A7E180089C010 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -238,6 +251,7 @@
 			files = (
 				399F63A81F2378820057D072 /* ConfigureSheet.xib in Resources */,
 				39B2D0291EF591460068BB3F /* mononoki-Regular.ttf in Resources */,
+				39300F181F2A80AB0089C010 /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
