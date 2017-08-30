@@ -112,8 +112,8 @@
 				39BF17981EF1C2D400BB834B /* Preview */,
 				39B2D0271EF5912C0068BB3F /* Assets */,
 				3988956C1EF6E32E0006DD3C /* Extensions */,
-				39BF17711EF1B98E00BB834B /* Products */,
 				39300F141F2A7E180089C010 /* Resources */,
+				39BF17711EF1B98E00BB834B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
