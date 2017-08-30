@@ -8,6 +8,7 @@ class Settings {
     }
     set(value) {
       defaults.set(value, forKey: "isTwelveHour")
+      defaults.synchronize()
     }
   }
 
