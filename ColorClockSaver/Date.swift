@@ -3,10 +3,9 @@ import Cocoa
 extension Date {
   private func asRGBComonents() -> (red: Double, green: Double, blue: Double) {
     let calendar = Calendar(identifier: .gregorian)
-    let date = Date()
-    let hour = calendar.component(.hour, from: date)
-    let minute = calendar.component(.minute, from: date)
-    let second = calendar.component(.second, from: date)
+    let hour = calendar.component(.hour, from: self)
+    let minute = calendar.component(.minute, from: self)
+    let second = calendar.component(.second, from: self)
 
     let hexHour = (1.0/23) * Double(hour)
     let hexMinute = (1.0/59) * Double(minute)
