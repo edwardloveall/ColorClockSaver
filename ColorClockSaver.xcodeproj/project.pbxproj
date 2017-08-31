@@ -43,7 +43,7 @@
 		39508BE11F213D30006D2C6C /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		399F63A41F2378100057D072 /* ConfigureSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureSheet.swift; sourceTree = "<group>"; };
 		399F63A71F2378820057D072 /* ConfigureSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
-		39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mononoki-Regular.ttf"; path = "Assets/mononoki-Regular.ttf"; sourceTree = "<group>"; };
+		39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mononoki-Regular.ttf"; sourceTree = "<group>"; };
 		39B2D02E1EF59B190068BB3F /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		39BF17701EF1B98E00BB834B /* ColorClockSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorClockSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BF17771EF1B98E00BB834B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			children = (
 				39B2D0281EF591460068BB3F /* mononoki-Regular.ttf */,
 			);
-			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		39BF17661EF1B98E00BB834B = {
