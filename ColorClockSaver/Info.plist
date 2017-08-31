@@ -15,9 +15,9 @@
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0 RC1</string>
+	<string>1.0 RC2</string>
 	<key>CFBundleVersion</key>
-	<string>1.0 RC1</string>
+	<string>1.0 RC2</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2017 Edward Loveall. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
