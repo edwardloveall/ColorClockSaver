@@ -2,8 +2,9 @@
 
 # A ScreenSaver for macOS
 
-_Note: This still might be a little buggy. Install at your own risk._
+[Announcement blog post](https://blog.edwardloveall.com/colorclocksaver)
 
 ## Installation
 
-Download the latest [release](https://github.com/edwardloveall/ColorClockSaver/releases/) and place it in your `~/Library/Screen Savers/` directory. Then, open System Preferences > Desktop & Screen Saver and select ColorClockSaver from the list.
+Download the latest [release](https://github.com/edwardloveall/ColorClockSaver/releases/latest) and place it in your `~/Library/Screen Savers/` directory. Then, open System Preferences > Desktop & Screen Saver and select ColorClockSaver from the list.
+
