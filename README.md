@@ -6,5 +6,6 @@
 
 ## Installation
 
-Download the latest [release](https://github.com/edwardloveall/ColorClockSaver/releases/latest) and place it in your `~/Library/Screen Savers/` directory. Then, open System Preferences > Desktop & Screen Saver and select ColorClockSaver from the list.
+_Note: This screensaver requires macOS Sierra (10.12)_
 
+Download the latest [release](https://github.com/edwardloveall/ColorClockSaver/releases/latest) and place it in your `~/Library/Screen Savers/` directory. Then, open System Preferences > Desktop & Screen Saver and select ColorClockSaver from the list.
