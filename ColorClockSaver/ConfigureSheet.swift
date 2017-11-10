@@ -9,7 +9,7 @@ class ConfigureSheet {
 
   init() {
     let bundle = Bundle(for: ConfigureSheet.self)
-    bundle.loadNibNamed("ConfigureSheet", owner: self, topLevelObjects: nil)
+    bundle.loadNibNamed(NSNib.Name(rawValue: "ConfigureSheet"), owner: self, topLevelObjects: nil)
     twelveHourCheck.state = settings.twelveHourStateForCheckBox()
   }
 
@@ -22,7 +22,7 @@ class ConfigureSheet {
 
   @IBAction func setTwelveHour(_ sender: NSButton) {
     let value = sender.state
-    if value == NSOnState {
+    if value == NSControl.StateValue.on {
       settings.isTwelveHour = true
     } else {
       settings.isTwelveHour = false

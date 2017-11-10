@@ -10,7 +10,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     setDefaults()
     guard let screenSaverView = window.contentView as? MainView
       else { fatalError("could not cast window's contentView as a MainView") }
-    guard let screen = NSScreen.main()
+    guard let screen = NSScreen.main
       else { fatalError("could not retrive main screen") }
 
     window.setFrame(screen.frame, display: true)

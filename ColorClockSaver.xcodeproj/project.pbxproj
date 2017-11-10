@@ -273,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */,
 				39E88BC41EFD92050014F7EF /* BackgroundView.swift in Sources */,
 				39D984771EF40F3E006E0617 /* ColorCodeView.swift in Sources */,
 				39EA84F11F11A7B1008E1F7E /* LabelView.swift in Sources */,
@@ -281,7 +282,6 @@
 				39D892411EF4BEBD0063F53D /* Date.swift in Sources */,
 				39E88BC71EFDEC390014F7EF /* NSColor.swift in Sources */,
 				39508BE21F213D30006D2C6C /* Settings.swift in Sources */,
-				39BF177E1EF1BA0600BB834B /* MainView.swift in Sources */,
 				39BF17AF1EF1D8B500BB834B /* TimeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,10 +418,11 @@
 				INFOPLIST_FILE = ColorClockSaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edwardloveall.ColorClockSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -436,9 +437,10 @@
 				INFOPLIST_FILE = ColorClockSaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edwardloveall.ColorClockSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
@@ -455,7 +457,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -470,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edwardloveall.Preview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
