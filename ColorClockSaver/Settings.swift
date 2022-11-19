@@ -27,11 +27,11 @@ class Settings {
     }
   }
 
-  func twelveHourStateForCheckBox() -> Int {
+  func twelveHourStateForCheckBox() -> NSControl.StateValue {
     if isTwelveHour {
-      return NSOnState
+      return NSControl.StateValue.on
     } else {
-      return NSOffState
+      return NSControl.StateValue.off
     }
   }
 

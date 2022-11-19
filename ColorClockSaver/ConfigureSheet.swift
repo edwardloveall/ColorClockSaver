@@ -22,7 +22,7 @@ class ConfigureSheet {
 
   @IBAction func setTwelveHour(_ sender: NSButton) {
     let value = sender.state
-    if value == NSOnState {
+    if value == NSControl.StateValue.on {
       settings.isTwelveHour = true
     } else {
       settings.isTwelveHour = false

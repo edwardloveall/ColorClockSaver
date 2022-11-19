@@ -58,11 +58,11 @@ class MainView: ScreenSaverView {
     setNeedsDisplay(bounds)
   }
 
-  override func hasConfigureSheet() -> Bool {
+  override var hasConfigureSheet: Bool {
     return true
   }
 
-  override func configureSheet() -> NSWindow? {
+  override var configureSheet: NSWindow? {
     let configureSheet = ConfigureSheet.sharedInstance
     return configureSheet.window
   }
