@@ -10,7 +10,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     setDefaults()
     guard let screenSaverView = window.contentView as? MainView
       else { fatalError("could not cast window's contentView as a MainView") }
-    guard let screen = NSScreen.main()
+    guard let screen = NSScreen.main
       else { fatalError("could not retrive main screen") }
 
     window.setFrame(screen.frame, display: true)
@@ -35,7 +35,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   func setDefaults() {
     let args = CommandLine.arguments
     let defaults = Settings()
-    if let index = args.index(of: "-isTwelveHour") {
+    if let index = args.firstIndex(of: "-isTwelveHour") {
       let value = args[index + 1] == "YES" ? true : false
       defaults.isTwelveHour = value
     }
